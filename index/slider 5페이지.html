@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./slider.css">
+
+    <script src="./slider.js"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+               
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap" id="wrap">
+
+        <!-- 슬라이더 섹션 -->
+        <section class="slider_section">
+            <!-- 슬라이더 wrap -->
+            <ul class="slider_wrap">
+                
+                <!-- 슬라이더 1 -->
+                <li class="slider1 slider_inner">
+                    <!-- 타이틀 구역 -->
+                    <div class="slider_inner_title">
+                        <!-- 타이틀 -->
+                        <h4>높다란 하늘에 내 마음을 날려보내🛫</h4>
+                        <!-- 곡수, 날짜 -->
+                        <div class="slider-info">
+                            총 15곡
+                            <span class="slider-info-bar">|</span>
+                            2022.08.19                            
+                        </div>
+                    </div>
+                    <!-- 플레이 버튼 -->
+                    <button class="slider-playbtn" title="전체듣기"></button>
+                    <!-- 플레이리스트 구역 -->
+                    <div class="slider-playlist">
+                        <!-- 리스트 1 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/654/302/02/04/402302654_5c9d447e.jpg?1553810559009/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  Paper Airplane (Feat. Melissa Polinar)  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Jeremy Passion</span>
+                                </p>
+                            </li>      
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/114/083/00/04/400083114_5d678b86.jpg?1567067015136/dims/resize/140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> Sunday In New York </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Mel Tormé</span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/021/410/04/04/404410021_62c048ae_o.jpg?1656768687002/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> Twenties </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Bren Joy</span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/431/412/04/04/404412431_5ed49ea3.jpg?1590992547289/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> HOME RUN (feat. raychel jay) </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Shawn Wasabi</span>
+                                </p>
+                            </li> 
+                        </ul>
+                        <!-- 리스트 2 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/248/108/05/04/405108248_5f62eaa5.jpg?1600318118180/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> 17 (feat. 조슈아 & 도겸 of 세븐틴) </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Pink Sweat$</span>
+                                </p>
+                            </li>                            
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/282/770/04/04/404770282_5f183e17.jpg?1595424280042/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> Go Blind </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">spring gang</span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/879/770/04/04/404770879_5f184a0e.jpg?1595427342729/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> Love! </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Gloria Tells</span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/926/056/05/04/405056926_5f4f97f6.jpg?1599051766858/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> Between Good and Bye </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Sionya</span>
+                                </p>
+                            </li>                       
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 슬라이더 2 -->
+                <li class="slider2 slider_inner">
+                    <!-- 타이틀 구역 -->
+                    <div class="slider_inner_title">
+                        <!-- 타이틀 -->
+                        <h4> 높은 가을 하늘을 보며 듣는 아련 팝🍃 </h4>
+                        <!-- 곡수, 날짜 -->
+                        <div class="slider-info">
+                            총 15곡
+                            <span class="slider-info-bar">|</span>
+                            2022.08.16                            
+                        </div>
+                    </div>
+                    <!-- 플레이 버튼 -->
+                    <button class="slider-playbtn" title="전체듣기"></button>
+                    <!-- 플레이리스트 구역 -->
+                    <div class="slider-playlist">
+                        <!-- 리스트 1 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/058/249/00/04/400249058_609b2b11_o.jpg?1620781841209/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   We Don't Talk Anymore (feat. Selena Gomez)   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Charlie Puth</span>
+                                </p>
+                            </li>      
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/637/324/00/04/400324637_5c9d417e.jpg?1553809791799/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  Say  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Ruel</span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/720/321/00/04/400321720_5c9d4fda.jpg?1553813468201/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  Scars  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Elias</span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/370/756/05/04/405756370_600c5807_o.jpg?1611421706809/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  Hold My Hand  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Isak Danielson</span>
+                                </p>
+                            </li> 
+                        </ul>
+                        <!-- 리스트 2 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/287/335/04/04/404335287_5e438b66.jpg?1581484905574/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  To Die For  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Sam Smith</span>
+                                </p>
+                            </li>                            
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/181/274/02/04/402274181_5cac0f3e.jpg?1554779967052/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  Nervous (Acoustic)  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Gavin James</span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/340/983/03/04/403983340_5dafd2cf.jpg?1571803856015/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  Lose You To Love Me </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Selena Gomez</span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/612/318/00/04/400318612_5c9d3d2b.jpg?1553808684710/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong> Fall (Explicit Ver.) </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">Sasha Sloan</span>
+                                </p>
+                            </li>                       
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 슬라이더 3 -->
+                <li class="slider3 slider_inner">
+                    <!-- 타이틀 구역 -->
+                    <div class="slider_inner_title">
+                        <!-- 타이틀 -->
+                        <h4>  텐션 끌올 시켜주는 에너제틱 케이팝✨  </h4>
+                        <!-- 곡수, 날짜 -->
+                        <div class="slider-info">
+                            총 15곡
+                            <span class="slider-info-bar">|</span>
+                            2022.08.24                            
+                        </div>
+                    </div>
+                    <!-- 플레이 버튼 -->
+                    <button class="slider-playbtn" title="전체듣기"></button>
+                    <!-- 플레이리스트 구역 -->
+                    <div class="slider-playlist">
+                        <!-- 리스트 1 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/242/954/08/04/408954242_62eb872e_s.jpg?1659602736333/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    FOREVER 1    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">소녀시대 (GIRLS' GENERATION)</span>
+                                </p>
+                            </li>      
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/223/131/09/04/409131223_6302d6a5_s.jpg?1661130406773/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   After LIKE   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">IVE (아이브)</span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/673/103/09/04/409103673_62fedd88_o.jpg?1660870025489/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   Pink Venom   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">BLACKPINK</span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/847/826/08/04/408826847_62e7289c_s.jpg?1659316382613/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   Attention  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> NewJeans </span>
+                                </p>
+                            </li> 
+                        </ul>
+                        <!-- 리스트 2 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/289/476/08/04/408476289_62c78bd9_s.jpg?1657244636972/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   Girls   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">aespa</span>
+                                </p>
+                            </li>                            
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/465/462/08/04/408462465_62907e0f_s.jpg?1653636626552/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   Beatbox   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> NCT DREAM </span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/096/361/02/04/402361096_5c9f7622.jpg?1553954339247/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   지금 널 찾아가고 있어  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 세븐틴 (SEVENTEEN) </span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/661/713/08/04/408713661_62c38a52_s.jpg?1656982099471/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>  HOLIDAY  </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> WINNER </span>
+                                </p>
+                            </li>                       
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 슬라이더 4 -->
+                <li class="slider4 slider_inner">
+                    <!-- 타이틀 구역 -->
+                    <div class="slider_inner_title">
+                        <!-- 타이틀 -->
+                        <h4>   가을 시티 뷰에 이 노래를🍂  </h4>
+                        <!-- 곡수, 날짜 -->
+                        <div class="slider-info">
+                            총 15곡
+                            <span class="slider-info-bar">|</span>
+                            2022.08.26                            
+                        </div>
+                    </div>
+                    <!-- 플레이 버튼 -->
+                    <button class="slider-playbtn" title="전체듣기"></button>
+                    <!-- 플레이리스트 구역 -->
+                    <div class="slider-playlist">
+                        <!-- 리스트 1 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/886/036/09/04/409036886_62f5fed7_s.jpg?1660288729166/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>     BYE (feat. 휘인)    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 라비 (RAVI) </span>
+                                </p>
+                            </li>      
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/597/228/03/04/403228597_5d23e634.jpg?1562633782605/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    좋아하고 있어요    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 유키카 </span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/506/841/02/04/402841506_5cc2c227.jpg?1556267560878/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    love (Feat. Syd) (Explicit Ver.)    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 딘 (DEAN) </span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/376/923/08/04/408923376_62e8c7fc_s.jpg?1659422718879/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    Jungle Bike   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 유라 (youra) </span>
+                                </p>
+                            </li> 
+                        </ul>
+                        <!-- 리스트 2 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/252/074/06/04/406074252_607d3465_s.jpg?1618818151296/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    빅터를 기다리며 (Feat. 다원)   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 015B </span>
+                                </p>
+                            </li>                            
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/766/808/08/04/408808766_62e0de35_s.jpg?1658904119870/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    SEOUL DRIFT    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">  지코 (ZICO) </span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/153/525/06/04/406525153_6131762b_o.jpg?1630631467928/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    Nomad   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> Zion.T </span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/516/875/08/04/408875516_62e22dfd_s.jpg?1658990079646/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>   Mood   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> DPR IAN </span>
+                                </p>
+                            </li>                       
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 슬라이더 5 -->
+                <li class="slider5 slider_inner">
+                    <!-- 타이틀 구역 -->
+                    <div class="slider_inner_title">
+                        <!-- 타이틀 -->
+                        <h4>   꿈과 현실 사이 몽환으로 초대합니다🚪  </h4>
+                        <!-- 곡수, 날짜 -->
+                        <div class="slider-info">
+                            총 15곡
+                            <span class="slider-info-bar">|</span>
+                            2022.08.29                            
+                        </div>
+                    </div>
+                    <!-- 플레이 버튼 -->
+                    <button class="slider-playbtn" title="전체듣기"></button>
+                    <!-- 플레이리스트 구역 -->
+                    <div class="slider-playlist">
+                        <!-- 리스트 1 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/852/898/05/04/405898852_6049b2ee_s.jpg?1615442673190/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    Welcome To The Show   </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> DPR IAN </span>
+                                </p>
+                            </li>      
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/843/265/00/04/400265843_5c9d64aa.jpg?1553818795876/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    Butterfly (prologue mix)    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 방탄소년단 </span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/121/132/00/04/400132121.jpg?1603802179529/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>     미행 (그림자; Shadow)     </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> f(x) </span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/365/114/06/04/406114365_6088d928_s.jpg?1619581229186/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>     Birthday Cake    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 비비 (BIBI) </span>
+                                </p>
+                            </li> 
+                        </ul>
+                        <!-- 리스트 2 -->
+                        <ul class="slider-list">
+                            <!-- 1 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/575/327/04/04/404327575_5e41013c.jpg?1581318460335/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>     Salty    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 더보이즈 (THE BOYZ) </span>
+                                </p>
+                            </li>                            
+                            <!-- 2 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/451/308/02/04/402308451_5cb6d063.jpg?1555484772223/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>     She's a Baby     </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist">  지코 (ZICO) </span>
+                                </p>
+                            </li>                        
+                            <!-- 3 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/album/212/510/02/04/402510212_5c9f7721.jpg?1553954594796/dims/resize/140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>     춤    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 유라 (youra) </span>
+                                </p>
+                            </li>                        
+                            <!-- 4 -->
+                            <li>
+                                <!-- 커버이미지 -->
+                                <img src="https://cdn.music-flo.com/image/v2/album/470/067/06/04/406067470_62b845f4_o.jpg?1656243700694/dims/resize/140x140/quality/90" alt="" class="slider-song-img">
+                                <p class="slider-song-title">
+                                    <!-- 노래 제목 -->
+                                    <strong>    Lonely Hearts Club    </strong> <br>
+                                    <!-- 가수 이름 -->
+                                    <span class="slider-song-artist"> 이바다</span>
+                                </p>
+                            </li>                       
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스와이퍼 연습</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./스와이퍼.css">
+
+    <style>
+        
+    </style>
+
+</head>
+<body>
+
+    <!-- 스와이퍼 구조 : swiper-container > swiper-wrapper > swiper-slide -->
+
+    <!-- Slider main container -->
+    <div id="test-slide" class="swiper">
+        <ul class="swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide">슬라이드1</li>
+            <li class="swiper-slide">슬라이드2</li>
+            <li class="swiper-slide">슬라이드3</li>
+        </ul>
+    </div>  
+
+
+    <div class="btn-prev"></div>
+    <div class="btn-next"></div>
+
+    <div class="swiper-pagination"></div>
+
+   <script>
+        const swiper = new Swiper('.swiper', {
+           
+            // Optional parameters
+            slidesPerView: 1,
+            freeMode : true,
+            allowTouchMove : false,
+            speed: 200,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+                type : 'bullets', // 버튼 모양 결정 "bullets", "fraction" 
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.btn-next',
+                prevEl: '.btn-prev',
+            },
+
+            // on: {
+            //     reachEnd: function () {
+            //     // alert('슬라이드 변경');
+            //     swiper.navigation.nextEl.style.visibility = "hidden"
+            //     }
+            // },
+            on: {
+                init: function () {
+                    console.log('swiper initialized');
+                },
+                
+                slideChange: function () {
+                // alert('슬라이드 변경');
+                // console.log(swiper.realIndex);
+                // if(swiper.navigation.nextEl.style.visibility == "hidden"){
+                //     swiper.navigation.nextEl.style.visibility = "visible"
+                // }
+                    if(swiper.realIndex == swiper.slides.length-1){
+                        // swiper.navigation.nextEl.style.visibility == "hidden";
+                        swiper.navigation.nextEl.classList.add('swiper-btn-hidden');
+                        console.log(swiper.realIndex);
+                    }else if(swiper.realIndex == 0){
+                        // swiper.navigation.prevEl.style.visibility = "hidden" 
+                        swiper.navigation.prevEl.classList.add('swiper-btn-hidden');
+                    }
+                    else{
+                        swiper.navigation.prevEl.classList.remove('swiper-btn-hidden'); 
+                        swiper.navigation.nextEl.classList.remove('swiper-btn-hidden'); 
+                    }
+                },
+            },
+            
+            observer: true,
+            observeParents: true,
+
+        });
+
+        swiper.slideTo(2);
+        // swiper.on('slideChange', function () {
+        //     console.log('slide changed');
+        // });
+
+        // swiper.on('reachEnd', function () {
+        //     swiper.navigation.nextEl.style.visibility = "hidden"
+        // });
+
+        
+    </script>
+</body>
+</html>
