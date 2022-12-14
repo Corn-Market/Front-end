@@ -138,50 +138,18 @@ h2{
     font-size: 15px;
     color: #fff;
 }
+.search-wrap .id-search-wrap .inputEnter .emailInput{
+    display: flex;
+}
 .search-wrap .id-search-wrap .search-type .emailInput .userSelect{
-    width: 250px;
-    width: 35px;
+    width: 300px;
+    height: 35px;
 }
 .search-wrap .userSelect{
-    position: relative;
     z-index: 4;
     cursor: pointer;
 }
 .search-wrap .userSelect select{
-    visibility: hidden;
-}
-.search-wrap .userSelect .newSelect{
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 290px;
     height: 35px;
-    width: 100%;
-    line-height: 32px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    background: url() no-repeat repeat right center;
-    padding: 0 25px 0 10px;
-    box-sizing: border-box;
-    font-size: 15px;
-    color: #202020;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.search-wrap .userSelect .options{
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    max-height: 300px;
-    overflow: hidden;
-    overflow-y: auto;
-    border: 1px solid #313131;
-    background-color: #fff;
-}
-.search-wrap .userSelect .option li{
-    padding: 3px 10px;
-    font-size: 13px;
-    line-height: 16px;
 }
