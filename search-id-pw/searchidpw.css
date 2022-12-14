@@ -42,6 +42,7 @@ h2{
 }
 .search-current a{
     text-decoration: none;
+    color: #202020;
 }
 .id-search-wrap{
     margin: 0 auto;
