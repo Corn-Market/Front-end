@@ -116,3 +116,15 @@
     border: none;
     color: #ffffff;
 }
+.board-modify-wrap{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.board-modify-wrap select{
+    width: 200px;
+    height: 44px;
+    border: 1.5px solid rgb(241,196,15); 
+    border-radius: 5px;
+}
