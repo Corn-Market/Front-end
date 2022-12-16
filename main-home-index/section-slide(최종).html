@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main-home-index/section-slide.css" />
+    <script src="../main-home-index/section_slide.js"></script>
+  </head>
+
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrap">
+        <div class="swiper-slide slide01">
+          <div>
+            <h1 class="home-main-title">당신 근처의<br />콘마켓</h1>
+            <p class="text-m">
+              중고 거래부터 동네 정보까지, 이웃과 함께해<br />
+              가깝고 따뜻한 당신의 근처를 만들어요.
+            </p>
+          </div>
+          <div class="home-main-slide-img-01">img</div>
+        </div>
+
+        <div class="swiper-slide slide02">
+          <div class="home-main-slide-img-02"></div>
+          <div>
+            <h1 class="home-main-title">
+              우리동네<br />
+              중고 직거래 마켓
+            </h1>
+            <p class="text-m">
+              동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide03">
+          <div>
+            <h1 class="home-main-title">
+              이웃과 함께 하는<br />
+              동네생활
+            </h1>
+            <p class="text-m">
+              우리 동네의 다양한 이야기를 이웃과 함께 나누어요.
+            </p>
+
+            <ul class="home-story-list">
+              <li class="home-story-list-item">
+                <div class="icon-story"></div>
+                <div class="text-s text-bold">우리동네질문</div>
+                <div class="text-xs">
+                  궁금한 게 있을 땐 이웃에게 물어보세요.
+                </div>
+              </li>
+              <li class="home-story-list-item">
+                <div class="icon-story"></div>
+                <div class="text-s text-bold">동네분실센터</div>
+                <div class="text-xs">
+                  무언가를 잃어버렸을 때, 함께 찾을 수 있어요.
+                </div>
+              </li>
+              <li class="home-story-list-item">
+                <div class="icon-story"></div>
+                <div class="text-s text-bold">동네모임</div>
+                <div class="text-xs">
+                  관심사가 비슷한 이웃과 온오프라인으로 만나요.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="home-main-slide-img-03"></div>
+        </div>
+        <div class="swiper-slide slide04">
+          <div class="home-main-slide-img-04">img</div>
+          <div>
+            <h1 class="home-main-title">
+              내 근처에서 찾는<br />
+              동네가게
+            </h1>
+            <p class="text-m">
+              우리 동네 가게를 찾고 있나요?<br />
+              동네 주민이 남긴 진짜 후기를 함께 확인해보세요!
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide01">
+          <div>
+            <h1 class="home-main-title">당신 근처의<br />콘마켓</h1>
+            <p class="text-m">
+              중고 거래부터 동네 정보까지, 이웃과 함께해<br />
+              가깝고 따뜻한 당신의 근처를 만들어요.
+            </p>
+          </div>
+          <div class="home-main-slide-img-01">img</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        let slides = document.querySelectorAll(".swiper-slide");
+        let contents = []; //배열
+        slides.forEach(function (slide, index) {
+          contents[index] = slide.outerHTML;
+        });
+
+        let index = 0;
+        function nextSlide() {
+          index++;
+          if (index >= contents.length) {
+            index = 1;
+          }
+
+          let swiper = document.querySelector(".swiper-wrap");
+
+          //애니메이션 효과
+          swiper.animate(
+            {
+              transform: [
+                `translateX(${(index - 1) * -100}vw)`, //시작
+                `translateX(${index * -100}vw)`, //도착
+              ],
+            },
+            {
+              duration: 1000, // 위의효과가 1초간 지속되도록
+              fill: "forwards",
+            }
+          );
+        }
+
+        setInterval(nextSlide, 3000);
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+  }
+  .swiper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .swiper-wrap {
+    height: 600px;
+    display: flex;
+  }
+  .swiper-slide {
+    min-width: 100vw;
+    height: 600px;
+    display: flex;
+  }
+  p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .home-main-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    padding-top: 250px;
+  }
+  h1 {
+    font-weight: 700;
+  }
+  .text-m {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+  }
+
+  /* slide01*/
+
+  .slide01 {
+    background-color: #fbf7f3;
+  }
+  .home-main-slide-img-01 {
+    margin-top: 25px;
+    background-color: red;
+    width: 500px;
+    height: 550px;
+  }
+
+  .slide01 .home-main-title {
+    margin-left: 100px;
+    margin-right: 350px;
+  }
+
+  .slide01 .text-m {
+    margin-right: 350px;
+    margin-left: 100px;
+  }
+
+  /*slide02*/
+
+  .slide02 {
+    background-color: #ffffff;
+  }
+  .home-main-slide-img-02 {
+    background-color: blue;
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 200px;
+    width: 500px;
+    height: 550px;
+  }
+
+  .slide02 .home-main-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    padding-top: 250px;
+  }
+  .slide02 .text-m {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+  }
+
+  /* slide03*/
+
+  .slide03 {
+    background-color: #e4f3e5;
+  }
+  .home-main-slide-img-03 {
+    background-color: green;
+    margin-top: 25px;
+    width: 500px;
+    height: 550px;
+  }
+
+  .slide03 .home-main-title {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    padding-top: 200px;
+  }
+
+  .slide03 .text-m {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+  }
+  .slide03 .home-main-title {
+    margin-left: 100px;
+    margin-right: 20px;
+  }
+  .slide03 .text-m {
+    margin-right: 20px;
+    margin-left: 100px;
+  }
+
+  .slide03 ul {
+    list-style: none;
+  }
+  .slide03 ul li {
+    height: 50px;
+    margin: 1.6rem;
+  }
+  .slide03 li {
+    display: list-item;
+  }
+
+  .home-story-list .home-story-list-item {
+    height: 50px;
+    margin-right: 4rem;
+    max-width: 14rem;
+    margin-left: 0px;
+  }
+  .home-story-list .icon-story {
+    width: 56px;
+    height: 56px;
+    background-color: green;
+    background-size: 56px 56px;
+  }
+  .home-story-list {
+    list-style-type: none;
+  }
+  .slide03 ul {
+    display: flex;
+    margin-inline-start: 100px;
+  }
+
+  /* slide4*/
+
+  .slide04 {
+    background-color: #ffffff;
+  }
+  .home-main-slide-img-04 {
+    margin-top: 25px;
+    background-color: yellow;
+    margin-left: 100px;
+    margin-right: 200px;
+    width: 500px;
+    height: 550px;
+  }
+  .slide04 .home-main-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    padding-top: 250px;
+  }
+
+  .slide04 .text-m {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+  }
+</style>
