@@ -10,3 +10,4 @@ function pwPopup(){
     var option = "width = 450 , height = 300"
     window.open(url,name,option);
 }
+
