@@ -163,8 +163,10 @@ h2{
     text-align: center;
     font-size: 15px;
     color: #fff;
+    margin-top: 5px;
 }
 .search-wrap .id-search-wrap .inputEnter .emailInput{
+    margin-top: 5px;
     display: flex;
 }
 .search-wrap .id-search-wrap .search-type .emailInput .userSelect{
