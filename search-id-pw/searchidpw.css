@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -100,8 +101,14 @@ h2{
     font-size: 15px;
     color: #202020;
 }
+.search-wrap .emailInput .styleInput{
+    display: inline-block;
+    width: 300px;
+    vertical-align: center;
+    line-height: 0;
+}
 .search-wrap .styleInput .inputE{
-    width: 500px;
+    width: 300px;
     height: 35px;
     padding-left: 8px;
     border: 1px solid #ddd;
@@ -112,9 +119,26 @@ h2{
     color: #202020;
     display: inline-block;
 }
-.search-wrap .id-search-wrap .search-type .type-list-current .inputEnter .emailInput{
-    margin-bottom: 10px;
+.emaillinep{
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: rgb(117 117 117);
 }
+.search-wrap .codesendInput button{
+    margin-left: 5px;
+    width: 220px;
+    height: 35px;
+    background-color: rgb(241, 196, 15);
+    line-height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgb(241, 196, 15);
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
 .search-wrap .styleInput .delBtn{
     position: absolute;
     top: 9px;
@@ -151,6 +175,49 @@ h2{
     cursor: pointer;
 }
 .search-wrap .userSelect select{
+    width: 250px;
+    height: 35px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: rgb(117 117 117);
+}
+.search-wrap .codenumInput .inputC{
+    width: 500px;
+    height: 35px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+    display: inline-block;
+}
+.search-wrap .codenumInput button{
+    margin-left: 10px;
     width: 290px;
     height: 35px;
+    background-color: rgb(241, 196, 15);
+    line-height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgb(241, 196, 15);
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+.codenumInput{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+/* error*/
+.search-wrap .error{
+    width: 900px;
+    height: 35px;
+    text-align: left;
+}
+.search-wrap .error p{
+    color: rgb(255, 0, 0);;
+    font-size: 12px;
 }
