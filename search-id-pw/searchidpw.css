@@ -195,6 +195,7 @@ h2{
     color: #202020;
     display: inline-block;
 }
+
 .search-wrap .codenumInput button{
     margin-left: 10px;
     width: 290px;
@@ -210,6 +211,7 @@ h2{
 .codenumInput{
     margin-bottom: 10px;
     display: flex;
+    display: none;
 }
 
 /* error*/
