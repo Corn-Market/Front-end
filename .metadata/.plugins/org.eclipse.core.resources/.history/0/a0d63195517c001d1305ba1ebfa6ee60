@@ -1,0 +1,146 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<%
+	String path = request.getContextPath();
+%>
+<link href="<%=path %>/css/section.css" rel="stylesheet">
+</head>
+<body>
+ <!-- 상품 리스트 -->
+        <section class="home-main-card-wrap">
+            <div>
+                <h1 class="home-card-title">중고거래 인기매물</h1>
+            </div>
+            <div class="home-card-wrap">
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-top">
+                    <a class="card-link">
+                        <div class="card-photo">photo</div>
+                        <div class="card-desc">
+                            <div class="card-title">ㅇㅇ판매합니다</div>
+                            <div class="card-price">20,000원</div>
+                            <div class="card-region">서울시 구로구 개봉동</div>
+                            <div class="card-counts">
+                                <span>관심</span>
+                                ∙
+                                <span>채팅</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="card-more">
+                <a>인기매물 더 보기</a>
+            </div>
+        </section>
+</body>
+</html>

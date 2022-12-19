@@ -1,0 +1,126 @@
+
+12월 16, 2022 10:37:08.881 NEW SESSION
+12월 16, 2022 10:37:08.882 [27672:2176:1216/103708.877:ERROR:device_event_log_impl.cc(215)] [10:37:08.876] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 10:38:03.819 [27672:11880:1216/103803.817:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 10:46:33.607 [11640:5244:1216/104633.606:ERROR:device_event_log_impl.cc(215)] [10:46:33.606] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 10:47:27.479 [11640:18408:1216/104727.477:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 10:48:26.132 [24692:8944:1216/104826.131:ERROR:device_event_log_impl.cc(215)] [10:48:26.131] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 10:49:21.607 [24692:18244:1216/104921.606:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 10:51:01.608 [20964:27912:1216/105101.608:ERROR:device_event_log_impl.cc(215)] [10:51:01.607] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 10:51:58.371 [20964:19288:1216/105158.370:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 10:52:19.929 [21812:8588:1216/105219.928:ERROR:device_event_log_impl.cc(215)] [10:52:19.928] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 10:53:22.85 [17600:17848:1216/105322.084:ERROR:device_event_log_impl.cc(215)] [10:53:22.083] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 10:54:17.688 [17600:19640:1216/105417.686:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 11:00:09.352 [17796:14920:1216/110009.350:ERROR:device_event_log_impl.cc(215)] [11:00:09.350] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 11:01:04.119 [17796:5244:1216/110104.118:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 11:06:00.748 [1216/110600.744:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:06:00.754 [1216/110600.750:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:06:00.758 [1216/110600.755:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:06:00.765 [1216/110600.763:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:06:00.791 [1216/110600.767:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:06:00.793 [1216/110600.773:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:08:08.892 [23004:25764:1216/110808.891:ERROR:device_event_log_impl.cc(215)] [11:08:08.891] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 11:08:26.56 [20868:21128:1216/110826.054:ERROR:device_event_log_impl.cc(215)] [11:08:26.054] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 11:09:22.888 [20868:14688:1216/110922.887:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 11:25:42.751 [15448:28984:1216/112542.749:ERROR:device_event_log_impl.cc(215)] [11:25:42.750] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 11:26:38.571 [15448:29160:1216/112638.569:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 11:53:41.201 [1216/115341.198:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:53:41.203 [1216/115341.202:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:53:41.205 [1216/115341.204:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:53:41.210 [1216/115341.209:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:53:41.212 [1216/115341.211:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 11:53:41.215 [1216/115341.214:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 12:03:50.989 [15448:3908:1216/120350.988:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+12월 16, 2022 12:36:37.397 [15448:3908:1216/123637.396:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+12월 16, 2022 12:56:26.31 [23684:22692:1216/125626.030:ERROR:device_event_log_impl.cc(215)] [12:56:26.031] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 12:56:55.850 [23356:5128:1216/125655.849:ERROR:device_event_log_impl.cc(215)] [12:56:55.850] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+12월 16, 2022 15:31:48.180 NEW SESSION
+12월 16, 2022 15:31:48.180 [2584:23932:1216/153148.175:ERROR:device_event_log_impl.cc(215)] [15:31:48.175] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 15:33:32.537 [16104:12060:1216/153332.535:ERROR:device_event_log_impl.cc(215)] [15:33:32.535] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 15:33:33.294 [16104:19952:1216/153333.292:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 15:35:04.191 [21112:20404:1216/153504.189:ERROR:device_event_log_impl.cc(215)] [15:35:04.189] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 15:35:57.233 [21112:16692:1216/153557.231:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 15:36:23.403 [1216/153623.402:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 15:36:23.406 [1216/153623.405:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 15:36:23.408 [1216/153623.407:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 15:36:23.415 [1216/153623.412:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 15:36:23.416 [1216/153623.414:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 15:36:23.417 [1216/153623.417:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 15:36:36.329 [14484:19276:1216/153636.327:ERROR:device_event_log_impl.cc(215)] [15:36:36.328] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 15:37:32.211 [14484:10792:1216/153732.210:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 16:19:35.821 [1216/161935.813:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 16:19:35.829 [1216/161935.817:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 16:19:35.831 [1216/161935.819:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 16:19:35.834 [1216/161935.823:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 16:19:35.835 [1216/161935.826:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 16:19:35.837 [1216/161935.828:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 16, 2022 16:22:38.318 [26552:8796:1216/162238.317:ERROR:device_event_log_impl.cc(215)] [16:22:38.317] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 16, 2022 16:23:34.50 [26552:13776:1216/162334.049:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 16, 2022 17:17:57.722 [26552:26124:1216/171757.721:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+12월 16, 2022 17:17:59.751 [26552:26124:1216/171759.750:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+12월 16, 2022 17:18:45.551 [26552:26124:1216/171845.550:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+12월 16, 2022 17:28:35.203 [26552:26124:1216/172835.202:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+
+12월 19, 2022 11:43:24.340 NEW SESSION
+12월 19, 2022 11:43:24.340 [21132:20320:1219/114324.266:ERROR:device_event_log_impl.cc(215)] [11:43:24.265] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 11:44:18.966 [21132:23824:1219/114418.965:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 11:48:38.766 [18188:18664:1219/114838.765:ERROR:device_event_log_impl.cc(215)] [11:48:38.765] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 11:48:58.40 [12696:16544:1219/114858.040:ERROR:device_event_log_impl.cc(215)] [11:48:58.039] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 11:49:54.996 [12696:21868:1219/114954.996:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 11:56:49.439 [12148:17988:1219/115649.438:ERROR:device_event_log_impl.cc(215)] [11:56:49.439] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 11:57:01.256 [2488:12184:1219/115701.255:ERROR:device_event_log_impl.cc(215)] [11:57:01.255] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 11:57:57.45 [2488:23228:1219/115757.044:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 12:08:28.863 [14200:21148:1219/120828.863:ERROR:device_event_log_impl.cc(215)] [12:08:28.863] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 12:09:24.764 [14200:10600:1219/120924.763:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 12:11:43.236 [1219/121143.234:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 12:11:43.237 [1219/121143.237:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 12:11:43.239 [1219/121143.238:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 12:11:43.242 [1219/121143.241:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 12:11:43.243 [1219/121143.243:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 12:11:43.246 [1219/121143.244:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 12:12:15.968 [14196:20296:1219/121215.967:ERROR:device_event_log_impl.cc(215)] [12:12:15.967] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 12:13:13.05 [14196:27084:1219/121313.004:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 12:21:04.18 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+12월 19, 2022 12:50:36.423 [2772:27212:1219/125036.422:ERROR:device_event_log_impl.cc(215)] [12:50:36.421] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 12:51:32.252 [2772:15416:1219/125132.252:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 13:02:45.727 [12564:13124:1219/130245.726:ERROR:device_event_log_impl.cc(215)] [13:02:45.725] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:03:41.558 [12564:19964:1219/130341.558:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 13:05:51.439 [27268:25780:1219/130551.438:ERROR:device_event_log_impl.cc(215)] [13:05:51.438] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:06:48.286 [27268:17768:1219/130648.285:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 13:19:34.894 [1604:19812:1219/131934.894:ERROR:device_event_log_impl.cc(215)] [13:19:34.894] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:20:31.803 [1604:13676:1219/132031.802:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 13:22:30.41 [9672:28900:1219/132230.039:ERROR:device_event_log_impl.cc(215)] [13:22:30.039] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:22:43.434 [20148:2432:1219/132243.432:ERROR:device_event_log_impl.cc(215)] [13:22:43.432] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:23:45.415 [29012:23680:1219/132345.413:ERROR:device_event_log_impl.cc(215)] [13:23:45.413] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:24:42.364 [29012:26924:1219/132442.364:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 13:27:41.401 [2072:27144:1219/132741.400:ERROR:device_event_log_impl.cc(215)] [13:27:41.400] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:28:16.441 [28912:15732:1219/132816.440:ERROR:device_event_log_impl.cc(215)] [13:28:16.440] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:29:06.207 [28912:14996:1219/132906.207:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 13:46:13.927 [27512:24492:1219/134613.926:ERROR:device_event_log_impl.cc(215)] [13:46:13.926] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 13:48:08.504 [18796:25464:1219/134808.503:ERROR:device_event_log_impl.cc(215)] [13:48:08.504] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 14:17:13.327 [29100:26396:1219/141713.325:ERROR:device_event_log_impl.cc(215)] [14:17:13.321] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 14:17:56.880 [29100:16736:1219/141756.879:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 14:51:47.793 [1219/145147.791:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 14:51:47.797 [1219/145147.796:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 14:51:47.798 [1219/145147.797:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 14:51:47.800 [1219/145147.800:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 14:51:47.802 [1219/145147.801:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 14:51:47.803 [1219/145147.803:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 14:52:02.303 [13896:7184:1219/145202.303:ERROR:device_event_log_impl.cc(215)] [14:52:02.302] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 14:52:16.916 [11492:28536:1219/145216.916:ERROR:device_event_log_impl.cc(215)] [14:52:16.915] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 14:53:08.94 [11492:11924:1219/145308.094:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 15:03:07.573 [1219/150307.572:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:03:07.574 [1219/150307.573:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:03:07.575 [1219/150307.575:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:03:07.578 [1219/150307.577:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:03:07.579 [1219/150307.579:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:03:07.581 [1219/150307.580:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:33:19.143 [26584:20672:1219/153319.142:ERROR:device_event_log_impl.cc(215)] [15:33:19.142] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 19, 2022 15:34:09.580 [26584:11584:1219/153409.579:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 15:42:50.467 [1219/154250.463:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:42:50.471 [1219/154250.465:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:42:50.472 [1219/154250.467:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:42:50.473 [1219/154250.470:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d26eaa6-aa98-449f-a815-d75716e2bbe7: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:42:50.474 [1219/154250.471:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eb57251c-9b33-4c88-ab79-6957b60edd48: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 19, 2022 15:42:50.474 [1219/154250.473:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\源��쁺�쁽\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\3fa11afb-23d6-42dd-8d90-b92c86fec8ac: 지정된 파일을 찾을 수 없습니다. (0x2)
