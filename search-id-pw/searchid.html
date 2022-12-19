@@ -7,24 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corn-Market</title>
     <link href="../search-id-pw/searchidpw.css" rel="stylesheet">
-    
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../search-id-pw/popup.js"></script>
     <script src="../search-id-pw/searchidpw.js"></script>
-    <style>
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48
-        }
-        .search-title .material-symbols-outlined{
-            float: right;
-        }
-        </style>
+   
 </head>
 
 <body>
@@ -50,9 +36,7 @@
                 <ul>
                     <li class="type-list-current">
                         <div class="search-title">
-                            <span class="material-symbols-outlined">
-                            </span>
-                            <button type="button" id="search-display" onclick="searchdisplayhp()">등록된 휴대폰번호로 찾기</button>
+                            <button type="button" id="search-display" onclick="searchdisplayhp()" class="arrow-dropdown-hp">등록된 휴대폰번호로 찾기</button>
                         </div>
                         <div class="search-type-display-hp">
                             <div class="inputEnter" style="display: block;">
@@ -60,45 +44,45 @@
                                     <div class="styleInput">
                                         <input id="memberNm1" name="memberNm" type="text" class="input1"
                                             placeholder="이름">
-                                        <span id="conClear" class="delBtn" style="display:none;"></span>
+                                        <span id="nameerror" class="delBtn"></span>
                                     </div>
                                     <div class="styleInput">
                                         <input id="memberHp" name="memberHp" type="text" class="input1"
                                             inputmode="numeric" placeholder="휴대폰번호 (-까지 입력해주세요)">
-                                        <span id="conClear" class="delBtn" style="display:none;"></span>
-                                        <p id="hperror" class="hp-error" style="display: none"></p>
+                                        <span id="conClear" class="delBtn"></span>
+                                        <p id="hperror" class="error"></p>
                                     </div>
                                 </div>
                                 <div class="btnArea">
-                                    <button type="submit" onclick="idPopup()" class="btnYellow" id="hpbtnYellow">확인</button>
+                                    <button type="submit" onclick="idpopup()" class="btnYellow" id="hpbtnYellow">확인</button>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="type-list-current">
                         <div class="search-title">
-                            <button type="button" id="search-display" onclick="searchdisplayemail()">등록된 이메일로
+                            <button type="button" id="search-display" onclick="searchdisplayemail()" class="arrow-dropdown-email">등록된 이메일로
                                 찾기</button>
                         </div>
                         <div class="search-type-display-email">
                             <div class="inputEnter" style="display: block;">
-                                <form action="<c:url value='/account/id/mail'/" method="post" name="frm2">
+                                <form action="<c:url value='/account/id/mail'/" method="POST" name="frm2">
                                     <div class="inputBox">
                                         <div class="styleInput">
                                             <input id="conInput" name="sc.memberIdTmp" value type="text" class="input1"
                                                 placeholder="아이디">
-                                            <span id="conClear" class="delBtn" style="display: none;"></span>
+                                            <span id="iderror" class="delBtn"></span>
                                         </div>
                                         <div class="styleInput">
                                             <input id="memberNm2" name="memberNm" type="text" class="input1"
                                                 placeholder="이름">
-                                            <span id="conClear" class="delBtn" style="display: none;"></span>
+                                            <span id="nameerror" class="delBtn" ></span>
                                         </div>
                                         <div class="emailInput-id">
                                             <div class="styleInput-id">
                                                 <input name="memberEmail" id="memberEmail" type="text" class="inputE-id"
                                                     placeholder="이메일">
-                                                <span id="conClear" class="delBtn" style="display:none;"></span>
+            
                                             </div>
                                             <span class="emaillinep-id">@</span>
                                             <div class="userSelect-id">
@@ -114,10 +98,10 @@
                                                     <option value="yahoo.com">yahoo.com</option>
                                                 </select>
                                             </div>
-                                            <p id="emailerror" class="email-error" style="display: none;">등록된 이메일이 아닙니다.</p>
+                                            <p id="emailerror" class="error"></p>
                                         </div>
                                         <div class="btnArea">
-                                            <button type="submit" onclick="idPopup()" class="btnYellow">확인</button>
+                                            <button type="submit" onclick="idpopup()" class="btnYellow">확인</button>
                                         </div>
                                     </div>
                                 </form>

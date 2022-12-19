@@ -36,18 +36,39 @@ function searchdisplayemail() {
     }
 }
 
+// timer
+var time = 600;
+var min = "";
+var sec = "";
 
-/*** SECTION - ID ***/
-const hpinput = document.querySelector('#info__id input')
-const idErrorMsgEl = document.querySelector('#info__id .error-msg')
-idInputEl.addEventListener('change', () => {
-  const idRegExp = /^[a-zA-Z0-9]{6,20}$/ // 6~20자의 영문 소문자와 숫자
-  if(idRegExp.test(idInputEl.value)) { // 유효성 검사 성공
-    idErrorMsgEl.textContent = ""
-    account.id = idInputEl.value
-  } else { // 유효성 검사 실패
-    idErrorMsgEl.textContent = errMsg.id.invalid
-    account.id = null
-  }
-  console.log(account)
-});
+var x = setInterval(function () {
+    min = parseInt(time / 60);
+    sec = time % 60;
+
+    document.getElementById("code-timer").innerHTML = min + "분" + sec + "초";
+    time--;
+
+    if (time < 0) {
+        clearInterval(x);
+        document.getElementById("code-timer").innerHTML = "시간초과";
+    }
+}, 1000);
+
+
+
+//errormessage
+
+function idpopup1() {
+    let name = document.getElementById("memberNm1").value
+    let hp = document.getElementById("memberHp").value
+    if( name ===""){
+        document.getElementById("nameerror").innerHTML = "이름이 올바르지 않습니다."
+        check = false
+    }else{
+        document.getElementById("nameerror").innerHTML = ""
+    }
+    
+    if(hp ===""){
+        document.getElementById("hperror").innerHTML = "휴대폰 번호가 올바르지 않습니다."
+    }
+}
