@@ -6,7 +6,12 @@
 h2{
     text-align: center;
 }
-
+.search-type-display-hp{
+    display: none;
+}
+.search-type-display-email{
+    display: none;
+}
 
 .search-idpw-title{
     width: 250px;
@@ -120,6 +125,41 @@ h2{
     color: #202020;
     display: inline-block;
 }
+.search-wrap .emailInput .styleInput-id{
+    display: inline-block;
+    vertical-align: center;
+    line-height: 0;
+}
+.emailInput-id{
+    margin-top: 5px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.emaillinep-id{
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: rgb(117 117 117);
+}
+.search-wrap .styleInput-id .inputE-id{
+    width: 400px;
+    height: 35px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+.search-wrap .userSelect-id select{
+    width: 370px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: rgb(117 117 117);
+}
 .emaillinep{
     text-align: center;
     height: 35px;
@@ -166,7 +206,7 @@ h2{
     margin-top: 5px;
 }
 .search-wrap .id-search-wrap .inputEnter .emailInput{
-    margin-top: 5px;
+    margin-top: 10px;
     display: flex;
 }
 .search-wrap .id-search-wrap .search-type .emailInput .userSelect{
@@ -211,18 +251,27 @@ h2{
     color: #fff;
 }
 .codenumInput{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     display: none;
 }
 
 /* error*/
-.search-wrap .error{
+.search-wrap .email-error{
     width: 900px;
     height: 35px;
     text-align: left;
 }
-.search-wrap .error p{
+.search-wrap .email-error p{
+    color: rgb(255, 0, 0);;
+    font-size: 12px;
+}
+.search-wrap .hp-error{
+    width: 900px;
+    height: 35px;
+    text-align: left;
+}
+.search-wrap .hp-error p{
     color: rgb(255, 0, 0);;
     font-size: 12px;
 }
