@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="${path}/resources/css/login.css"/>
 <script src="${path}/resources/js/login.js"></script>
@@ -36,9 +36,9 @@
             <button onclick="location.href='./signUp.jsp'">회원가입</button>
         </div>
         <div class="login_fourth">
-            <a href=""><div class="simple_login1"><img class="kakao"></div></a>
-            <a href=""><div class="simple_login2"><img class="naver"><p>네이버로 로그인하기</p></div></a>
-            <a href=""><div class="simple_login3"><img class="google"><p>구글로 로그인하기</p></div></a>
+            <a href=""><div class="simple_login1"></div></a>
+            <a href=""><div class="simple_login2"></div></a>
+            <a href=""><div class="simple_login3"></div></a>
         </div>
     </div>
 </form>

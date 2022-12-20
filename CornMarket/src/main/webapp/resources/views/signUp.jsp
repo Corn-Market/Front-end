@@ -5,14 +5,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="${path}/resources/css/signUp.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="${path}/resources/js/signUp.js"></script>
 </head>
 <body>
 <jsp:include page="header.jsp"/>
 <jsp:include page="nav.jsp"/>
+<form name="frm">
 <div class="h2_st">
         <h2>회원가입</h2>
     </div>
@@ -125,7 +127,8 @@
 공고일자: 2022년 6월 28일
 시행일자: 2022년 7월 05일
         </textarea>
-        <input type="checkbox">(필수)콘마켓 약관 동의사항
+        <input type="checkbox" id="haveto1">
+        <lable>(필수)콘마켓 약관 동의사항</lable>
         <textarea class="rule1" cols="110" rows="10">
 위치기반서비스 이용약관
 제1조 (목적)
@@ -255,7 +258,8 @@ MMS 등으로 게시물을 등록할 경우 발생하는 요금은 회원이 가
             
 제1조 (시행일) 본 약관은 2017년 12월 1일부터 시행합니다.
         </textarea>
-        <input type="checkbox">(필수) 서비스 이용약관
+        <input type="checkbox" id="haveto2">
+        <label>(필수) 서비스 이용약관</label>
         <textarea class="rule1" cols="110" rows="10">
 콘마켓 (이하 "회사"라 함)은 콘마켓 서비스 가입과 관련하여 아래와 같이 사용자의 개인정보를 수집, 이용합니다.
 
@@ -268,7 +272,8 @@ MMS 등으로 게시물을 등록할 경우 발생하는 요금은 회원이 가
 검색이력/거래기록/방문기록 등 서비스이용기록, IP주소, 단말기 정보(OS, 화면사이즈, 기기식별값), 광고ID	이상행위 탐지, 부정이용 방지 및 서비스 개선을 위한 분석, 이용자의 관심, 성향에 기반한 개인 맞춤형 상품 추천 서비스(광고 포함)를 제공
 이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 동의 거부 시 당근마켓 서비스를 이용 하실 수 없습니다.
         </textarea>
-        <input type="checkbox">(필수)개인정보 수집 이용 동의
+        <input type="checkbox" id="haveto3">
+        <label>(필수)개인정보 수집 이용 동의</label>
         <textarea class="rule1" cols="110" rows="10">
 콘마켓 (이하 "회사"라 함)은 마케팅 정보 수신과 관련하여 아래와 같이 이용자의 개인정보를 수집, 이용합니다.
 
@@ -277,16 +282,19 @@ MMS 등으로 게시물을 등록할 경우 발생하는 요금은 회원이 가
 서비스에서 제공하는 혜택, 이벤트, 상품정보, 신규서비스 안내	회원 탈퇴 시 혹은 동의 철회 시까지
 이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 동의 거부 시 서비스에서 제공하는 혜택, 이벤트, 상품정보 등의 안내를 받으실 수 없습니다.
         </textarea>
-        <input type="checkbox">(선택)마케팅 정보 수신 동의
+        <input type="checkbox">
+        <label>(선택)마케팅 정보 수신 동의</label>
     </div>
 
     <div class="join_rule2">
-        <input type="radio" name="age" class="rule2-1">만 14세 이상입니다
-        <input type="radio" name="age">만 14세 미만입니다
+        <input type="radio" name="age" class="rule2-1" checked>
+        <lable>만 14세 이상입니다</lable>
+        <input type="radio" name="age" class="rule2-2">
+        <label>만 14세 미만입니다</label>
     </div>
     <div class="join_wrap">
         <div class="join_first">
-            <div class="join_main">이름</div>
+            <div class="join_main" id="name">이름</div>
             <input type="text" class="join_input">
         </div>
         <div class="join_first">
@@ -309,11 +317,11 @@ MMS 등으로 게시물을 등록할 경우 발생하는 요금은 회원이 가
         </div>
          <div class="join_first">
             <div class="join_main">이메일</div>
-            <input type="text" class="join_input_email">
+            	<input type="text" class="join_input_email">
                 <span class="join_phone">@</span>
-                <input type="text" class="join_input_email">
-                <select class="join_email_sel">
-                	<option value="etc">직접입력</option>
+                <input type="text" class="join_input_email" name="mid" >
+                <select class="join_email_sel" onChange="mailcheck()" name="mail">
+                	<option value="">직접입력</option>
                     <option value="gmail.com">gmail.com</option>
                     <option value="hanmail.net">hanmail.net</option>
                    	<option value="hotmail.com">hotmail.com</option>
@@ -328,10 +336,11 @@ MMS 등으로 게시물을 등록할 경우 발생하는 요금은 회원이 가
             <input type="text" class="join_input">
         </div>
         <div class="join_second">
-            <button class="btn1">저장</button>
-            <button>취소</button>
+            <button class="btn1" onclick="save()" id="joinbtn">저장</button>
+            <button onclick="./index.jsp">취소</button>
         </div>
     </div>
+</form>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

@@ -42,10 +42,14 @@ h2{
 
 .join_rule2{
     color:#868b94;
-    width: 310px;
+    width: 320px;
     height:30px;
     margin:10px auto;
     font-size: 14px;
+}
+
+.rule2-2{
+	margin-left:40px;
 }
 
 .join_first{
@@ -96,8 +100,8 @@ h2{
 .join_input{
     margin-left: 10px;
     margin-top: 2px;
-    width:150px;
-    height:40px;
+    width:250px;
+    height:35px;
 }
 
 .join_input_phone1{
@@ -185,8 +189,13 @@ h2{
     background-color: rgb(241, 196, 15);
     display:block;
     margin-left: 10px;
+    cursor:pointer;
 }
 
 .btn1{
     margin-left: 400px;
+}
+
+.error{
+	display:none;
 }

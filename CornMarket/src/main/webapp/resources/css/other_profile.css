@@ -43,26 +43,6 @@
     position:absolute;
     bottom:40px;
     right:100px;
-    cursor:pointer;
-}
-
-.chat_area{
-	width:380px;
-	height:150px;
-	position:relative;
-}
-.chatting{
-	 width:100px;
-    height:40px;
-    border-radius: 4px;
-    border-color: rgb(241, 196, 15);
-    background-color: rgb(241, 196, 15);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    display: block;
-    cursor:pointer;
-    position:absolute;
-    right:0px;
 }
 
 .profile_contents ul .manner_degree{
@@ -80,8 +60,8 @@
 
 .degree{
 	width:250px;
-	height:170px;
-    margin-top: 65px;
+	height:120px;
+    margin-top: 110px;
     margin-left:20px;
 }
 
@@ -123,7 +103,6 @@
     font-weight: bold;
     display: block;
     margin-left:20px;
-    cursor:pointer;
 }
 
 .profile_second{

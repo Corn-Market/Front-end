@@ -81,22 +81,38 @@ h2{
     border-color: rgb(241, 196, 15);
     background-color: rgb(241, 196, 15);
     margin-left: 30px;
+    cursor:pointer;
 }
 
 .simple_login1{
     margin:10px auto;
-    width:240px;
+    width:230px;
     height:40px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/kakao_login_medium_narrow.png);
+    cursor:pointer;
 }
 .simple_login2{
     margin:10px auto;
-    width:240px;
+    width:230px;
     height:40px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/btnG_official.png);
+    cursor:pointer;
 }
 .simple_login3{
     margin:10px auto;
-    width:240px;
+    width:230px;
     height:40px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/google.png);
+    cursor:pointer;
 }
 
 .login_fourth{
@@ -109,28 +125,4 @@ h2{
     font-size: 13.5px;
     font-weight: bold;
     color:white;
-}
-
-.kakao{
-    width:240px;
-    height:35px;
-    border-radius: 12px;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../img/kakao_login_large_wide\ \(1\).png);
-}
-.naver{
-    width:240px;
-    height:35px;
-    border-radius: 12px;
-    background-position: center;
-    background-size: cover;
-}
-.google{
-    width:240px;
-    height:35px;
-    border-radius: 12px;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../img/btn_google_signin_light_focus_web@2x.png);
 }

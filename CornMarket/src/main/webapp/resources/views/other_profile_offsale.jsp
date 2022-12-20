@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="${path}/resources/css/profile.css"/>
+<link rel="stylesheet" href="${path}/resources/css/other_profile.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
         .offsale{
@@ -28,14 +28,20 @@
             </div>
             <div class="profile_contents">
                 <div class="profile_nickname">나아님</div>
-                <div class="degree">
-                    <div class="manner_degree">매너온도</div>
-                    <div class="profile_degree">36.5℃</div>
-                </div>
-                <ul>
-                    <li>마포구 인증</li>
-                    <li>2019년 11월 4일 가입인증</li>
-                </ul>
+                <ul class="degree">
+	                    <li class="manner_degree">
+	                    	<div class=flexf>
+	                    		매너온도
+	                        	<div class="profile_degree">36.5℃</div>
+	                    	</div>
+	                    </li>
+	                    <li class="manner_degree1">
+	                    		마포구 인증
+	                    </li>
+	                    <li class="manner_degree1">
+	                        2019년 11월 15일 인증
+	                    </li>
+	            </ul>
             </div>
         </div>
         <div class="profile_second">

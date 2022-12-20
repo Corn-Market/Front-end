@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="${path}/resources/css/profile.css"/>
 <script src="${path}/resources/js/town.js"></script>
@@ -49,12 +49,15 @@
 	                    </li>
 	                 </ul>
             </div>
+            <div class="chat_area">
+            	<input type="button" value="채팅방" class="chatting">
+            </div>
         </div>
         <div class="profile_second">
             <div class="profile_nav">
-                <div class="profile_status onsale"><a href="./other_profile_onsale.html">판매중</a></div>
-                <div class="profile_status offsale"><a href="./other_profile_offsale.html">판매완료</a></div>
-                <div class="profile_status review"><a href="./other_profile_review.html">거래후기</a></div>
+                <div class="profile_status onsale"><a href="./profile_onsale.jsp">판매중</a></div>
+                <div class="profile_status offsale"><a href="./profile_offsale.jsp">판매완료</a></div>
+                <div class="profile_status review"><a href="./profile_review.jsp">거래후기</a></div>
             </div>
             <div class="home-card-wrap">
                 <article class="card-top">

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="${path}/resources/css/profile.css"/>
 <script src="${path}/resources/js/town.js"></script>
@@ -48,6 +48,9 @@
 	                        2019년 11월 15일 인증
 	                    </li>
 	                 </ul>
+            </div>
+            <div class="chat_area">
+            	<input type="button" value="채팅방" class="chatting">
             </div>
         </div>
         <div class="profile_second">

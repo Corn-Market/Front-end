@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="${path}/resources/css/profile.css"/>
 <script src="${path}/resources/js/town.js"></script>
@@ -49,34 +49,17 @@
 	                    </li>
 	                 </ul>
             </div>
+            <div class="chat_area">
+            	<input type="button" value="채팅방" class="chatting">
+            </div>
         </div>
         <div class="profile_second">
             <div class="profile_nav">
-                <div class="profile_status onsale"><a href="./other_profile_onsale.jsp">판매중</a></div>
-                <div class="profile_status offsale"><a href="./other_profile_offsale.jsp">판매완료</a></div>
-                <div class="profile_status review"><a href="./other_profile_review.jsp">거래후기</a></div>
+                <div class="profile_status onsale"><a href="./profile_onsale.jsp">판매중</a></div>
+                <div class="profile_status offsale"><a href="./profile_offsale.jsp">판매완료</a></div>
+                <div class="profile_status review"><a href="./profile_review.jsp">거래후기</a></div>
             </div>
             <div class="home-card-wrap">
-                <article class="card-top">
-                    <a class="card-link">
-                        <div class="card-photo">photo</div>
-                        <div class="card-desc">
-                            <div class="card-title">ㅇㅇ판매합니다</div>
-                            <div class="card-price">20,000원</div>
-                            <div class="card-region">서울시 구로구 개봉동</div>
-                        </div>
-                    </a>
-                </article>
-                <article class="card-top">
-                    <a class="card-link">
-                        <div class="card-photo">photo</div>
-                        <div class="card-desc">
-                            <div class="card-title">ㅇㅇ판매합니다</div>
-                            <div class="card-price">20,000원</div>
-                            <div class="card-region">서울시 구로구 개봉동</div>
-                        </div>
-                    </a>
-                </article>
                 <article class="card-top">
                     <a class="card-link">
                         <div class="card-photo">photo</div>
