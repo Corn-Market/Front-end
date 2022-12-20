@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../board/board-loopup.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        const showValue = (target) => {
+            const value = target.value;
+
+            document.querySelector("#sortway").innerHTML = `${value}로 조회하기`;
+        }
+
+        // data
+
+        const selectValue = {
+            최신글 : ['선택없음'],
+            조회수높은순 : ['선택없음'],
+            카테고리별 : ['전자기기','가구,인테리어','의류','뷰티,미용','취미,게임,음반','반려동물용품','기타'],
+            지역별 : ['강남구','강동구','강북구','강서구','구로구','금천구','관악구','광진구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','은평구','양천구','영등포구','용산구','종로구','중구','중랑구']
+        };
+
+        $(function(){
+            init();
+
+            $(document).on('change','select[name=sortchoice1]',function(){
+                const classVal = $(this).val();
+                $('select[name=sortchoice2] option').each(function(idx,item){
+                    if($(this).data('class')== classVal || $(this).val() == ''){
+                        $(this).show();
+                    }else{
+                        $(this).hide();
+                    }
+                });
+                $('select[name=sortchoice2]').val('');
+            })
+        });
+
+        function init(){
+            let sClassHtml = '<option value="">조회할 방법을</option>';
+            let sItemHtml = '<option value="">선택해주세요</option>';
+
+            for(const key in selectValue) {
+                sClassHtml += '<option value="${key}">${key}</option>';
+
+                const list = selectValue[key];
+                for(let i=0; i< list.length; i++){
+                    sItemHtml += '<option value="${list[i]}" data-class="${key}">${list[i]}</option>';
+                }
+            }
+            $('select[name=sortchoice1]').html(sClassHtml);
+            $('select[name=sortchoice2]').html(sItemHtml);
+
+            $('select[name=sortchoice2] option').each(function(idx,item){
+                if($(this).val() =='') return true;
+                $(this).hide();
+            });
+        }
+    </script>
+    <!-- 상품 리스트 -->
+    <section class="board-lookup-wrap">
+        <div>
+            <h1 class="board-lookup-title" id="onchange" name="onchange">판매</h1>
+            <div class="board-select-wrap">
+                <p class="sort-way" id="sortway" name="sortway">최신글로 조회하기</p>
+                <select class="sort-way-select1" onchange="showValue(this)" id="sortchoice1" name="sortchoice1">
+                </select>
+                <select class="sort-way-select2" name="sortchoice2" id="sortchoice2">
+                </select>
+            </div>
+        </div>
+
+        <div class="board-card-wrap">
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="board-card-top">
+                <a class="board-card-link">
+                    <div class="board-card-photo">photo</div>
+                    <div class="board-card-desc">
+                        <div class="board-card-title">ㅇㅇ판매합니다</div>
+                        <div class="board-card-price">20,000원</div>
+                        <div class="board-card-region">서울시 구로구 개봉동</div>
+                    </div>
+                </a>
+            </article>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -24,7 +24,7 @@
     border: 2px solid rgb(241,196,15);
 }
 .board-img-wrap .sell-img{
-    text-align: center;
+    vertical-align: center;
     line-height: 300px;
     margin: 0 auto;
     margin-top: 30px;
@@ -140,11 +140,14 @@
     padding: 10px;
 }
 .board-btn-wrap{
+    display: block;
     width: 900px;
     margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .board-btn-wrap input{
+    display: block;
     width: 400px;
     height: 40px;
     background-color: rgb(241, 196, 15);
