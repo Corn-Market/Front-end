@@ -11,33 +11,33 @@
 
 <body>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script language="javascript">
+    <script type="text/javascript">
 
         const showValue = (target) => {
             const value = target.value;
 
             document.querySelector("#sortway").innerHTML = `${value}로 조회하기`;
         }
-    
+
 
         // data
 
         const selectValue = {
-            recent : ['선택없음'],
-            views : ['선택없음'],
-            category : ['전자기기','가구,인테리어','의류','뷰티,미용','취미,게임,음반','반려동물용품','기타'],
-            area : ['강남구','강동구','강북구','강서구','구로구','금천구','관악구','광진구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','은평구','양천구','영등포구','용산구','종로구','중구','중랑구']
+            recent: ['선택없음'],
+            views: ['선택없음'],
+            category: ['전자기기', '가구,인테리어', '의류', '뷰티,미용', '취미,게임,음반', '반려동물용품', '기타'],
+            area: ['강남구', '강동구', '강북구', '강서구', '구로구', '금천구', '관악구', '광진구', '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구', '성북구', '송파구', '은평구', '양천구', '영등포구', '용산구', '종로구', '중구', '중랑구']
         };
 
-        $(function(){
+        $(function () {
             init();
 
-            $(document).on('change','select[name=sortchoice1]',function(){
+            $(document).on('change', 'select[name=sortchoice1]', function () {
                 const classVal = $(this).val();
-                $('select[name=sortchoice2] option').each(function(idx,item){
-                    if($(this).data('class') == classVal || $(this).val() == ''){
+                $('select[name=sortchoice2] option').each(function (idx, item) {
+                    if ($(this).data('class') == classVal || $(this).val() == '') {
                         $(this).show();
-                    }else{
+                    } else {
                         $(this).hide();
                     }
                 });
@@ -45,26 +45,76 @@
             })
         });
 
-        function init(){
+        function init() {
             let sClassHtml = '<option value="">조회할 방법을</option>';
             let sItemHtml = '<option value="">선택해주세요</option>';
 
-            for(const value in selectValue) {
+            for (const value in selectValue) {
                 sClassHtml += '<option value="${value}">${value}</option>';
 
                 const list = selectValue[value];
-                for(let i=0; i< list.length; i++){
+                for (let i = 0; i < list.length; i++) {
                     sItemHtml += '<option value="${list[i]}" data-class="${key}">${list[i]}</option>';
                 }
             }
             $('select[name=sortchoice1]').html(sClassHtml);
             $('select[name=sortchoice2]').html(sItemHtml);
 
-            $('select[name=sortchoice2] option').each(function(idx,item){
-                if($(this).val() =='') return true;
+            $('select[name=sortchoice2] option').each(function (idx, item) {
+                if ($(this).val() == '') return true;
                 $(this).hide();
             });
         }
+        const totalPage = 250;
+        const currentPage = 1;
+        function paging(totalData, currentPage) {
+
+            const dataPerPage = 20;
+            const pageCount = 5;
+
+            //console.log("currentPage : " + currentPage);
+            //console.log("totalData : " + totalData);
+
+            const totalPage = Math.ceil(totalData / dataPerPage);
+            const pageGroup = Math.ceil(currentPage/pageCount);
+
+            let last = gpageGroup * pageCount;
+
+            if(last > totalPage)
+                last = totalPage;
+            let first = last - (pageCount -1);
+
+            const next = last +1;
+            const prev = first -1;
+
+            if(totalPage <1){
+                first = last;
+            }
+            const pages = $("#pages");
+            pages.empty();
+            if(first > 5){
+                pages.append("li class=\"pagination-item\">" +
+                "<a onclick=\"GetTarget(" + (prev) + ");\" style='margin-left:2px'>prev</a></li>");
+            }
+            for(let j=first; j<=lst; j++){
+                if(currentPage ===(j)){
+                    pages.append("<li class=\"pagination-item\">" +
+                        "<a class='active' onclick=\"GetTarget(" + (j) +
+                        ");\" style='margin-left:2px'>" + (j) + "</a></li>");
+                }else if (j>0) {
+                    pages.append("<li class=\"pagination-item\">" +
+                        "<a onclick=\"GetTarget(" + (j) + ");\" 
+                         style='margin-left:2px'>" +(j) + "</a></li>");
+                }
+            }
+            if(next > 5 && next < totalPage){
+                pages.append("<li class=\"pagination-item\">" +
+                    "<a onclick=\"GetTarget(" + (next) + ");\"
+                     style ='margin-left:2px'>next</a></li>");
+            }
+        }
+        for(let j=first; j<=)
+
     </script>
     <!-- 상품 리스트 -->
     <section class="board-lookup-wrap">
@@ -303,8 +353,9 @@
                     </div>
                 </a>
             </article>
-
-
+        </div>
+        <div class="board-pagination-wrap clearfix">
+            <ul class="board-pagination float--right" id="pages"></ul>
         </div>
 
     </section>
