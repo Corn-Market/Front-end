@@ -141,6 +141,7 @@
 }
 .board-btn-wrap{
     display: block;
+    display: flex;
     width: 900px;
     margin: 0 auto;
     margin-top: 50px;

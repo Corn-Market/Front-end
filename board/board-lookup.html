@@ -10,125 +10,19 @@
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript">
-
-        const showValue = (target) => {
-            const value = target.value;
-
-            document.querySelector("#sortway").innerHTML = `${value}로 조회하기`;
-        }
-
-
-        // data
-
-        const selectValue = {
-            recent: ['선택없음'],
-            views: ['선택없음'],
-            category: ['전자기기', '가구,인테리어', '의류', '뷰티,미용', '취미,게임,음반', '반려동물용품', '기타'],
-            area: ['강남구', '강동구', '강북구', '강서구', '구로구', '금천구', '관악구', '광진구', '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구', '성북구', '송파구', '은평구', '양천구', '영등포구', '용산구', '종로구', '중구', '중랑구']
-        };
-
-        $(function () {
-            init();
-
-            $(document).on('change', 'select[name=sortchoice1]', function () {
-                const classVal = $(this).val();
-                $('select[name=sortchoice2] option').each(function (idx, item) {
-                    if ($(this).data('class') == classVal || $(this).val() == '') {
-                        $(this).show();
-                    } else {
-                        $(this).hide();
-                    }
-                });
-                $('select[name=sortchoice2]').val('');
-            })
-        });
-
-        function init() {
-            let sClassHtml = '<option value="">조회할 방법을</option>';
-            let sItemHtml = '<option value="">선택해주세요</option>';
-
-            for (const value in selectValue) {
-                sClassHtml += '<option value="${value}">${value}</option>';
-
-                const list = selectValue[value];
-                for (let i = 0; i < list.length; i++) {
-                    sItemHtml += '<option value="${list[i]}" data-class="${key}">${list[i]}</option>';
-                }
-            }
-            $('select[name=sortchoice1]').html(sClassHtml);
-            $('select[name=sortchoice2]').html(sItemHtml);
-
-            $('select[name=sortchoice2] option').each(function (idx, item) {
-                if ($(this).val() == '') return true;
-                $(this).hide();
-            });
-        }
-        const totalPage = 250;
-        const currentPage = 1;
-        function paging(totalData, currentPage) {
-
-            const dataPerPage = 20;
-            const pageCount = 5;
-
-            //console.log("currentPage : " + currentPage);
-            //console.log("totalData : " + totalData);
-
-            const totalPage = Math.ceil(totalData / dataPerPage);
-            const pageGroup = Math.ceil(currentPage/pageCount);
-
-            let last = gpageGroup * pageCount;
-
-            if(last > totalPage)
-                last = totalPage;
-            let first = last - (pageCount -1);
-
-            const next = last +1;
-            const prev = first -1;
-
-            if(totalPage <1){
-                first = last;
-            }
-            const pages = $("#pages");
-            pages.empty();
-            if(first > 5){
-                pages.append("li class=\"pagination-item\">" +
-                "<a onclick=\"GetTarget(" + (prev) + ");\" style='margin-left:2px'>prev</a></li>");
-            }
-            for(let j=first; j<=lst; j++){
-                if(currentPage ===(j)){
-                    pages.append("<li class=\"pagination-item\">" +
-                        "<a class='active' onclick=\"GetTarget(" + (j) +
-                        ");\" style='margin-left:2px'>" + (j) + "</a></li>");
-                }else if (j>0) {
-                    pages.append("<li class=\"pagination-item\">" +
-                        "<a onclick=\"GetTarget(" + (j) + ");\" 
-                         style='margin-left:2px'>" +(j) + "</a></li>");
-                }
-            }
-            if(next > 5 && next < totalPage){
-                pages.append("<li class=\"pagination-item\">" +
-                    "<a onclick=\"GetTarget(" + (next) + ");\"
-                     style ='margin-left:2px'>next</a></li>");
-            }
-        }
-        for(let j=first; j<=)
-
-    </script>
+    
     <!-- 상품 리스트 -->
     <section class="board-lookup-wrap">
         <div>
-            <h1 class="board-lookup-title" id="onchange" name="onchange">판매</h1>
+            <h1 class="board-lookup-title" id="onchange" name="onchange">사기</h1>
             <div class="board-select-wrap">
                 <p class="sort-way" id="sortway" name="sortway">최신글로 조회하기</p>
-                <select class="sort-way-select1" onchange="showValue(this)" id="sortchoice1" name="sortchoice1">
+                <select class="sort-way-select1" id="sortchoice1" name="sortchoice1">
                     <option value="최신글">최신글</option>
-                    <option value="조회수↑">조회수↑</option>
-                    <option value="카테고리별">카테고리별</option>
-                    <option value="지역별">지역별</option>
+                    <option value="카테고리">카테고리별</option>
+                    <option value="지역">지역별</option>
                 </select>
-                <select class="sort-way-select2" name="sortchoice2" id="sortchoice2">
+                <select class="sort-way-select2" name="sortchoice2" id="sortchoice2" onchange="showValue(this)">
                 </select>
             </div>
         </div>
@@ -359,6 +253,47 @@
         </div>
 
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        const showValue = (target) => {
+            const text = target.options[target.selectedIndex].text;
+
+            document.querySelector("#sortway").innerHTML = `${text}`;
+        }
+
+        window.addEventListener("load", function () {
+
+            // data
+            let select = { 최신글: ["선택없음"], 카테고리: ["선택하세요", "전자기기", "가구,인테리어", "의류", "뷰티,미용", "취미,게임,음반", "반려동물용품", "기타"], 지역: ["강남구", "강동구", "강서구", "강북구", "관악구", "광진구", "구로구", "금천구", "노원구", "동대문구", "도봉구", "동작구", "마포구", "서대문구", "성동구", "성북구", "서초구", "송파구", "영등포구", "용산구", "양천구", "은평구", "종로구", "중구", "중랑구"] }
+
+            select.최신글.forEach(function (item) {
+                $("#sortchoice2").append(`<option> ${item}</option>`);
+            });
+            $("#sortchoice1").on("change", function () {
+                let key = this.value;
+
+                $("#sortchoice2").empty();
+
+                if (key == "최신글") {
+                    select.최신글.forEach(function (item) {
+                        $("#middle").append(`<option> ${item}</option>`);
+                    });
+                } else if (key == "카테고리") {
+                    select.카테고리.forEach(function (item) {
+                        $("#sortchoice2").append(`<option> ${item}</option>`);
+                    });
+                } else if (key == "지역") {
+                    select.지역.forEach(function (item) {
+                        $("#sortchoice2").append(`<option> ${item}</option>`);
+                    });
+                }
+            });
+        })
+    </script>
 
 </body>
 
